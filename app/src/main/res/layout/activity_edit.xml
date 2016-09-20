@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rigot.expensecalculator.EditActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/expenseNameLabel"
+        android:id="@+id/expenseNameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/selectExpenseButton"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expenseName"
+        android:layout_below="@+id/expenseNameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:maxLength="50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/categoryLabel"
+        android:id="@+id/categoryLabel"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/expenseName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoryDropDown"
+        android:layout_below="@+id/categoryLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/amountLabel"
+        android:id="@+id/amountLabel"
+        android:layout_below="@+id/categoryDropDown"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/expenseAmount"
+        android:layout_below="@+id/amountLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dateLabel"
+        android:id="@+id/dateLabel"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/expenseAmount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/receiptLabel"
+        android:id="@+id/receiptLabel"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/dateLabel"
+        android:layout_alignRight="@+id/amountLabel"
+        android:layout_alignEnd="@+id/amountLabel" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_Edit"
+        android:layout_below="@+id/receiptLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/browse_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/selectExpenseButton"
+        android:layout_toStartOf="@+id/selectExpenseButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDateCalendar"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/dateLabel"
+        android:layout_toRightOf="@+id/save"
+        android:layout_toEndOf="@+id/save"
+        android:layout_alignBottom="@+id/receiptLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/dateView"
+        android:layout_below="@+id/dateLabel"
+        android:layout_alignLeft="@+id/receiptLabel"
+        android:layout_alignStart="@+id/receiptLabel"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectExpenseButton"
+        android:id="@+id/selectExpenseButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelButton"
+        android:id="@+id/cancelButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editDateCalendar"
+        android:layout_alignEnd="@+id/editDateCalendar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/dateText"
+        android:layout_below="@+id/dateLabel"
+        android:layout_toRightOf="@+id/dateView"
+        android:layout_alignBottom="@+id/dateView"
+        android:layout_alignRight="@+id/selectExpenseButton"
+        android:layout_alignEnd="@+id/selectExpenseButton" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Expense Calculator</string>
+    <string name="addButton">Add Expense</string>
+    <string name="editButton">Edit Expense</string>
+    <string name="deleteButton">Delete Expense</string>
+    <string name="showButton">Show Expenses</string>
+    <string name="finishButton">Finish</string>
+    <string name="addExpenseLabel">Add An Expense</string>
+    <string name="expenseNameLabel">Expense Name</string>
+    <string name="categoryLabel">Category</string>
+    <string name="amountLabel">Amount</string>
+    <string name="dateLabel">Date</string>
+    <string name="addExpenseButton">Add Expense</string>
+    <string name="receiptLabel">Receipt</string>
+    <string name="selectExpenseButton">Select Expense</string>
+    <string name="saveButton">Save</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="simpleDeleteButton">Delete</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="delButton">Delete</string>
+    <string name="expenseDetailsLabel">Expense Details</string>
+    <string name="nameLabel">Name</string>
+    <string name="catLabel">Category</string>
+    <string name="amLabel">Amount</string>
+    <string name="dateL">Date</string>
+    <string name="finishShowButton">Finish</string>
+    <string-array name="category_array">
+        <item>Groceries</item>
+        <item>Invoice</item>
+        <item>Transportation</item>
+        <item>Shopping</item>
+        <item>Rent</item>
+        <item>Trips</item>
+        <item>Utilities</item>
+        <item>Other</item>
+    </string-array>
+</resources>
